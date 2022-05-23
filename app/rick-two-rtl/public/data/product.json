@@ -1,0 +1,278 @@
+[
+  {
+    "id": "1",
+    "sku": "asdf123",
+    "name": "حقيبة جلدية",
+    "price": 11.5,
+    "discount": 10,
+    "rating": 3,
+    "saleCount": 54,
+    "wishlistCount": 10,
+    "ratingCount": 5,
+    "category": ["رجال"],
+    "variation": [
+      {
+        "color": "black",
+        "image": "/assets/img/products/product1.png",
+        "stock": 20
+      },
+      {
+        "color": "violet",
+        "image": "/assets/img/products/product2.png",
+        "stock": 10
+      },
+      {
+        "color": "pink",
+        "image": "/assets/img/products/product3.png",
+        "stock": 5
+      },
+      {
+        "color": "brown",
+        "image": "/assets/img/products/product4.png",
+        "stock": 2
+      }
+    ],
+    "image": ["/assets/img/products/product1.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product1.png",
+      "/assets/img/product-slider/product2.png",
+      "/assets/img/product-slider/product3.png"
+    ],
+    "shortDescription": "خطأ في التعرّض للخطأ في جميع أنحاء العالم يجلس على خطأ متهم",
+    "fullDescription": "في حالة حدوث خطأ في الجهاز التنفسي في حالة الخطأ ، يتم إبطال اتهام دولودريم لودانتيوم ، وتوتام ريم أبريام ، وإيكسي إيبيز كيو أب أونو مخترع فيرتاتيس وأشباه معماري بييتا سيرة ذاتية."
+  },
+  {
+    "id": "2",
+    "sku": "asdf124",
+    "name": "حقيبة الغرور",
+    "price": 2.45,
+    "discount": 15,
+    "rating": 4,
+    "saleCount": 74,
+    "wishlistCount": 11,
+    "ratingCount": 8,
+    "category": ["نساء"],
+    "variation": [
+      {
+        "color": "black",
+        "image": "/assets/img/products/product2.png",
+        "stock": 20
+      },
+      {
+        "color": "violet",
+        "image": "/assets/img/products/product3.png",
+        "stock": 10
+      },
+      {
+        "color": "pink",
+        "image": "/assets/img/products/product4.png",
+        "stock": 5
+      },
+      {
+        "color": "brown",
+        "image": "/assets/img/products/product5.png",
+        "stock": 2
+      }
+    ],
+    "image": ["/assets/img/products/product2.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product2.png",
+      "/assets/img/product-slider/product3.png",
+      "/assets/img/product-slider/product4.png"
+    ],
+    "shortDescription": "خطأ في التعرّض للخطأ في جميع أنحاء العالم يجلس على خطأ متهم",
+    "fullDescription": "في حالة حدوث خطأ في الجهاز التنفسي في حالة الخطأ ، يتم إبطال اتهام دولودريم لودانتيوم ، وتوتام ريم أبريام ، وإيكسي إيبيز كيو أب أونو مخترع فيرتاتيس وأشباه معماري بييتا سيرة ذاتية."
+  },
+  {
+    "id": "3",
+    "sku": "asdf125",
+    "name": "حذاء رياضي",
+    "price": 22,
+    "discount": 20,
+    "rating": 5,
+    "saleCount": 7,
+    "wishlistCount": 31,
+    "ratingCount": 18,
+    "category": ["رجال", "نساء"],
+    "variation": [
+      {
+        "color": "black",
+        "image": "/assets/img/products/product3.png",
+        "stock": 20
+      },
+      {
+        "color": "violet",
+        "image": "/assets/img/products/product4.png",
+        "stock": 10
+      },
+      {
+        "color": "pink",
+        "image": "/assets/img/products/product5.png",
+        "stock": 5
+      },
+      {
+        "color": "brown",
+        "image": "/assets/img/products/product6.png",
+        "stock": 2
+      }
+    ],
+    "image": ["/assets/img/products/product3.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product3.png",
+      "/assets/img/product-slider/product4.png",
+      "/assets/img/product-slider/product5.png"
+    ],
+    "shortDescription": "خطأ في التعرّض للخطأ في جميع أنحاء العالم يجلس على خطأ متهم",
+    "fullDescription": "في حالة حدوث خطأ في الجهاز التنفسي في حالة الخطأ ، يتم إبطال اتهام دولودريم لودانتيوم ، وتوتام ريم أبريام ، وإيكسي إيبيز كيو أب أونو مخترع فيرتاتيس وأشباه معماري بييتا سيرة ذاتية."
+  },
+  {
+    "id": "4",
+    "sku": "asdf126",
+    "name": "حذاء بريميوم",
+    "price": 32.5,
+    "discount": 5,
+    "rating": 0,
+    "saleCount": 4,
+    "wishlistCount": 16,
+    "ratingCount": 6,
+    "category": ["رجال", "نساء"],
+    "stock": 10,
+    "image": ["/assets/img/products/product4.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product4.png",
+      "/assets/img/product-slider/product5.png",
+      "/assets/img/product-slider/product6.png"
+    ],
+    "shortDescription": "خطأ في التعرّض للخطأ في جميع أنحاء العالم يجلس على خطأ متهم",
+    "fullDescription": "في حالة حدوث خطأ في الجهاز التنفسي في حالة الخطأ ، يتم إبطال اتهام دولودريم لودانتيوم ، وتوتام ريم أبريام ، وإيكسي إيبيز كيو أب أونو مخترع فيرتاتيس وأشباه معماري بييتا سيرة ذاتية."
+  },
+  {
+    "id": "5",
+    "sku": "asdf127",
+    "name": "صندوق المكياج",
+    "price": 12.5,
+    "discount": 15,
+    "rating": 4,
+    "saleCount": 5,
+    "wishlistCount": 12,
+    "ratingCount": 7,
+    "category": ["نساء"],
+    "stock": 11,
+    "image": ["/assets/img/products/product5.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product5.png",
+      "/assets/img/product-slider/product6.png",
+      "/assets/img/product-slider/product7.png"
+    ],
+    "shortDescription": "خطأ في التعرّض للخطأ في جميع أنحاء العالم يجلس على خطأ متهم",
+    "fullDescription": "في حالة حدوث خطأ في الجهاز التنفسي في حالة الخطأ ، يتم إبطال اتهام دولودريم لودانتيوم ، وتوتام ريم أبريام ، وإيكسي إيبيز كيو أب أونو مخترع فيرتاتيس وأشباه معماري بييتا سيرة ذاتية."
+  },
+  {
+    "id": "6",
+    "sku": "asdf128",
+    "name": "حلق الاذن",
+    "price": 2.5,
+    "discount": 15,
+    "rating": 5,
+    "saleCount": 50,
+    "wishlistCount": 22,
+    "ratingCount": 8,
+    "category": ["نساء"],
+    "stock": 14,
+    "image": ["/assets/img/products/product6.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product6.png",
+      "/assets/img/product-slider/product7.png",
+      "/assets/img/product-slider/product8.png"
+    ],
+    "shortDescription": "خطأ في التعرّض للخطأ في جميع أنحاء العالم يجلس على خطأ متهم",
+    "fullDescription": "في حالة حدوث خطأ في الجهاز التنفسي في حالة الخطأ ، يتم إبطال اتهام دولودريم لودانتيوم ، وتوتام ريم أبريام ، وإيكسي إيبيز كيو أب أونو مخترع فيرتاتيس وأشباه معماري بييتا سيرة ذاتية."
+  },
+  {
+    "id": "7",
+    "sku": "asdf129",
+    "name": "حلقة الأذن الثانية",
+    "price": 2.5,
+    "discount": 15,
+    "rating": 5,
+    "saleCount": 50,
+    "wishlistCount": 22,
+    "ratingCount": 8,
+    "category": ["نساء"],
+    "stock": 14,
+    "image": ["/assets/img/products/product7.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product7.png",
+      "/assets/img/product-slider/product8.png",
+      "/assets/img/product-slider/product9.png"
+    ],
+    "shortDescription": "خطأ في التعرّض للخطأ في جميع أنحاء العالم يجلس على خطأ متهم",
+    "fullDescription": "في حالة حدوث خطأ في الجهاز التنفسي في حالة الخطأ ، يتم إبطال اتهام دولودريم لودانتيوم ، وتوتام ريم أبريام ، وإيكسي إيبيز كيو أب أونو مخترع فيرتاتيس وأشباه معماري بييتا سيرة ذاتية."
+  },
+  {
+    "id": "8",
+    "sku": "asdf130",
+    "name": "كاب جولة",
+    "price": 12,
+    "discount": 15,
+    "rating": 3,
+    "saleCount": 30,
+    "wishlistCount": 2,
+    "ratingCount": 6,
+    "category": ["نساء"],
+    "new": true,
+    "stock": 4,
+    "image": ["/assets/img/products/product8.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product8.png",
+      "/assets/img/product-slider/product9.png",
+      "/assets/img/product-slider/product10.png"
+    ],
+    "shortDescription": "خطأ في التعرّض للخطأ في جميع أنحاء العالم يجلس على خطأ متهم",
+    "fullDescription": "في حالة حدوث خطأ في الجهاز التنفسي في حالة الخطأ ، يتم إبطال اتهام دولودريم لودانتيوم ، وتوتام ريم أبريام ، وإيكسي إيبيز كيو أب أونو مخترع فيرتاتيس وأشباه معماري بييتا سيرة ذاتية."
+  },
+  {
+    "id": "9",
+    "sku": "asdf131",
+    "name": "حزام",
+    "price": 14,
+    "discount": 5,
+    "rating": 5,
+    "saleCount": 20,
+    "wishlistCount": 12,
+    "ratingCount": 9,
+    "category": ["رجال"],
+    "new": true,
+    "stock": 12,
+    "image": ["/assets/img/products/product9.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product9.png",
+      "/assets/img/product-slider/product10.png",
+      "/assets/img/product-slider/product1.png"
+    ],
+    "shortDescription": "خطأ في التعرّض للخطأ في جميع أنحاء العالم يجلس على خطأ متهم",
+    "fullDescription": "في حالة حدوث خطأ في الجهاز التنفسي في حالة الخطأ ، يتم إبطال اتهام دولودريم لودانتيوم ، وتوتام ريم أبريام ، وإيكسي إيبيز كيو أب أونو مخترع فيرتاتيس وأشباه معماري بييتا سيرة ذاتية."
+  },
+  {
+    "id": "10",
+    "sku": "asdf132",
+    "name": "مشبك شعر",
+    "price": 3,
+    "discount": 15,
+    "rating": 2,
+    "saleCount": 20,
+    "wishlistCount": 15,
+    "ratingCount": 4,
+    "category": ["نساء"],
+    "new": true,
+    "stock": 14,
+    "image": ["/assets/img/products/product10.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product10.png",
+      "/assets/img/product-slider/product1.png",
+      "/assets/img/product-slider/product2.png"
+    ],
+    "shortDescription": "خطأ في التعرّض للخطأ في جميع أنحاء العالم يجلس على خطأ متهم",
+    "fullDescription": "في حالة حدوث خطأ في الجهاز التنفسي في حالة الخطأ ، يتم إبطال اتهام دولودريم لودانتيوم ، وتوتام ريم أبريام ، وإيكسي إيبيز كيو أب أونو مخترع فيرتاتيس وأشباه معماري بييتا سيرة ذاتية."
+  }
+]

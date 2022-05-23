@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "جمع <br> حقيبة يد",
+    "subtitle": "احصل على خصم 30٪",
+    "image": "/assets/img/hero-slider/slider-1.jpg"
+  },
+
+  {
+    "id": 2,
+    "title": "جديد <br> أحذية",
+    "subtitle": "احصل على خصم 40٪",
+    "image": "/assets/img/hero-slider/slider-1.jpg"
+  },
+
+  {
+    "id": 3,
+    "title": "متميز <br> ملابس",
+    "subtitle": "احصل على خصم 50٪",
+    "image": "/assets/img/hero-slider/slider-1.jpg"
+  }
+]

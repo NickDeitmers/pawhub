@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Food",
+    "image": "/assets/img/icons/category/food.svg",
+    "url": "/shop"
+  },
+  {
+    "id": "2",
+    "name": "Toys",
+    "image": "/assets/img/icons/category/toys.svg",
+    "url": "/shop"
+  },
+  {
+    "id": "3",
+    "name": "Services",
+    "image": "/assets/img/icons/category/services.svg",
+    "url": "/shop"
+  },
+  {
+    "id": "4",
+    "name": "Vets",
+    "image": "/assets/img/icons/category/vets.svg",
+    "url": "/shop"
+  },
+  {
+    "id": "5",
+    "name": "Other",
+    "image": "/assets/img/icons/category/other.svg",
+    "url": "/shop"
+  },
+  {
+    "id": "6",
+    "name": "Bag",
+    "image": "/assets/img/icons/category/cat2.svg",
+    "url": "/shop"
+  }
+]

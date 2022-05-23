@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "رجال",
+    "image": "/assets/img/icons/category/cat1.svg",
+    "url": "/shop"
+  },
+  {
+    "id": "2",
+    "name": "نساء",
+    "image": "/assets/img/icons/category/cat2.svg",
+    "url": "/shop"
+  },
+  {
+    "id": "3",
+    "name": "كيس",
+    "image": "/assets/img/icons/category/cat3.svg",
+    "url": "/shop"
+  },
+  {
+    "id": "4",
+    "name": "مستحضرات التجميل",
+    "image": "/assets/img/icons/category/cat4.svg",
+    "url": "/shop"
+  },
+  {
+    "id": "5",
+    "name": "رياضات",
+    "image": "/assets/img/icons/category/cat5.svg",
+    "url": "/shop"
+  },
+  {
+    "id": "6",
+    "name": "كيس",
+    "image": "/assets/img/icons/category/cat3.svg",
+    "url": "/shop"
+  }
+]
