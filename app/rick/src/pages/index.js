@@ -1,9 +1,16 @@
 import Welcome from "./Welcome";
 import Home from "./Home";
 import Shop from "./Shop";
+import Groomers from "./Groomers";
+import Daycare from "./Daycare";
+import Events from "./Events";
+import Vets from "./Vets";
+import Other from "./Other";
 import Product from "./Product";
 import Chat from "./Chat";
 import Cart from "./Cart";
+import Calendar from "./Calendar";
+import Map from "./Map";
 import Wishlist from "./Wishlist";
 import Checkout from "./Checkout";
 import Notfound from "./NotFound";
@@ -20,9 +27,16 @@ export {
   Welcome,
   Home,
   Shop,
+  Groomers,
+  Daycare,
+  Events,
+  Vets,
+  Other,
   Product,
   Chat,
   Cart,
+  Calendar,
+  Map,
   Wishlist,
   Checkout,
   Notfound,

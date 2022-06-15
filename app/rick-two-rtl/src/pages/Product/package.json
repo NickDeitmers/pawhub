@@ -1,5 +1,0 @@
-{
-  "name": "product",
-  "private": true,
-  "main": "./Product.js"
-}

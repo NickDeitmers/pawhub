@@ -13,9 +13,17 @@ const PetRegister = lazy(() => import("./pages/PetRegister"));
 const Login = lazy(() => import("./pages/Login"));
 const Home = lazy(() => import("./pages/Home"));
 const Shop = lazy(() => import("./pages/Shop"));
+const Groomers = lazy(() => import("./pages/Groomers"));
+const Daycares = lazy(() => import("./pages/Daycares"));
+const Events = lazy(() => import("./pages/Events"));
+const Vets = lazy(() => import("./pages/Vets"));
+const Other = lazy(() => import("./pages/Other"));
 const Product = lazy(() => import("./pages/Product"));
+const Services = lazy(() => import("./pages/Services"));
 const Chat = lazy(() => import("./pages/Chat"));
 const Cart = lazy(() => import("./pages/Cart"));
+const Calendar = lazy(() => import("./pages/Calendar"));
+const Map = lazy(() => import("./pages/Map"));
 const Wishlist = lazy(() => import("./pages/Wishlist"));
 const Checkout = lazy(() => import("./pages/Checkout"));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -61,8 +69,38 @@ function App() {
               layout={DefaultLayout}
             />
             <AppRoute
+              path={process.env.PUBLIC_URL + "/groomers"}
+              component={Groomers}
+              layout={DefaultLayout}
+            />
+            <AppRoute
+              path={process.env.PUBLIC_URL + "/daycares"}
+              component={Daycares}
+              layout={DefaultLayout}
+            />
+            <AppRoute
+              path={process.env.PUBLIC_URL + "/events"}
+              component={Events}
+              layout={DefaultLayout}
+            />
+            <AppRoute
+              path={process.env.PUBLIC_URL + "/vets"}
+              component={Vets}
+              layout={DefaultLayout}
+            />
+            <AppRoute
+              path={process.env.PUBLIC_URL + "/other"}
+              component={Other}
+              layout={DefaultLayout}
+            />
+            <AppRoute
               path={process.env.PUBLIC_URL + "/product/:id"}
               component={Product}
+              layout={DefaultLayout}
+            />
+            <AppRoute
+              path={process.env.PUBLIC_URL + "/services/:id"}
+              component={Services}
               layout={DefaultLayout}
             />
             <AppRoute
@@ -73,6 +111,16 @@ function App() {
             <AppRoute
               path={process.env.PUBLIC_URL + "/cart"}
               component={Cart}
+              layout={DefaultLayout}
+            />
+            <AppRoute
+              path={process.env.PUBLIC_URL + "/calendar"}
+              component={Calendar}
+              layout={DefaultLayout}
+            />
+            <AppRoute
+              path={process.env.PUBLIC_URL + "/map"}
+              component={Map}
               layout={DefaultLayout}
             />
             <AppRoute

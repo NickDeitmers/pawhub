@@ -84,7 +84,7 @@ class Offcanvas extends Component {
                   }
                 />
               </span>
-              <Link to={process.env.PUBLIC_URL + "/order"}>My Order</Link>
+              <Link to={process.env.PUBLIC_URL + "/order"}>My Orders</Link>
             </li>
             <li>
               <span className="icon">

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaAngleLeft } from "react-icons/fa";
 import { connect } from "react-redux";
@@ -10,6 +10,75 @@ import {
   setActiveSort,
   getSortedProducts
 } from "../../helpers/product";
+
+//From tutorial
+import { useMemo } from "react";
+import { GoogleMap, useLoadScript, Marker, InfoWindow } from "@react-google-maps/api"
+import * as ppspInfo from "../../data/services.json";
+
+const mapStyles = {
+  width: '60%',
+  height: '40vh',
+  left: '20%',
+  right: '50%',
+  top: '50%',
+  display: 'flex'
+};
+
+function ShowMap() {
+  const [selectedService, setSelectedService] = useState(null);
+
+  return (
+    <GoogleMap 
+      zoom={13} 
+      center={{lat: 40.438699439743694, lng: -3.6874235000000004}}
+      mapContainerClassName="map-container"
+      mapContainerStyle={mapStyles}
+    >
+      {ppspInfo.pet_services.map(ppsp => (
+        <Marker 
+          key={ppsp.id} 
+          position={{
+            lat: ppsp.lat, 
+            lng: ppsp.lng
+          }}
+          onClick={() => {
+            setSelectedService(ppsp);
+          }}
+        />
+      ))}
+      
+      {selectedService && (
+        <InfoWindow
+          position={{
+            lat: selectedService.lat, 
+            lng: selectedService.lng
+          }}
+          onCloseClick={() => {
+            setSelectedService(null);
+          }}
+        >
+          <div>
+            <h6>{selectedService.name}</h6>
+            <p>{selectedService.address}</p>
+          </div>
+        </InfoWindow>
+
+      )}
+      
+    </GoogleMap>
+  );
+}
+
+function Map() {
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: "AIzaSyCdiyFwn90uHcb3owsMbVFikWXU6hQrrGI",
+  });
+
+  if (!isLoaded) return <div>Loading...</div>;
+  return <ShowMap />;
+}
+
 
 class Shop extends Component {
   constructor(props) {
@@ -82,42 +151,6 @@ class Shop extends Component {
             <div className="container space-mt--15 space-mb--50">
               <div className="row">
                 <div className="col-12">
-                  <div className="shop-filter-block space-mb--25">
-                    <h4 className="shop-filter-block__title space-mb--15">
-                      Colors
-                    </h4>
-                    <div className="shop-filter-block__content">
-                      {uniqueColors ? (
-                        <ul className="shop-filter-block__color">
-                          {uniqueColors.map((color, key) => {
-                            return (
-                              <li key={key}>
-                                <button
-                                  className={`${color}`}
-                                  onClick={e => {
-                                    getSortParams("color", color);
-                                    setActiveSort(e);
-                                  }}
-                                ></button>
-                              </li>
-                            );
-                          })}
-                          <li>
-                            <button
-                              onClick={e => {
-                                getSortParams("color", "");
-                                setActiveSort(e);
-                              }}
-                            >
-                              X
-                            </button>
-                          </li>
-                        </ul>
-                      ) : (
-                        "No colors found"
-                      )}
-                    </div>
-                  </div>
                   <div className="shop-filter-block">
                     <h4 className="shop-filter-block__title space-mb--15">
                       Categories
@@ -160,7 +193,12 @@ class Shop extends Component {
             </div>
           </div>
         </div>
-
+        <div>
+          <br></br>
+        </div>
+        <div display= "flex" justify-content= "center">
+        <Map />
+        </div>
         {/* shop products */}
         <ShopProducts products={finalSortedProducts} />
       </div>
@@ -175,4 +213,5 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(Shop);
+export default connect(mapStateToProps)(Shop) ;
+

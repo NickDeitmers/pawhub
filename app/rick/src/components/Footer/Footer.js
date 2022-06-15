@@ -18,25 +18,25 @@ const Footer = () => {
           </div>
         </Link>
         <Link
-          to={process.env.PUBLIC_URL + "/chat"}
+          to={process.env.PUBLIC_URL + "/wishlist"}
           className="footer-nav-single"
         >
           <div className="menu-wrapper">
             <ReactSVG
-              src={process.env.PUBLIC_URL + "/assets/img/icons/chat.svg"}
+              src={process.env.PUBLIC_URL + "/assets/img/icons/favourites.svg"}
             />
-            <span>Chat</span>
+            <span>Favourites</span>
           </div>
         </Link>
         <Link
-          to={process.env.PUBLIC_URL + "/cart"}
+          to={process.env.PUBLIC_URL + "/calendar"}
           className="footer-nav-single"
         >
           <div className="menu-wrapper">
             <ReactSVG
-              src={process.env.PUBLIC_URL + "/assets/img/icons/cart.svg"}
+              src={process.env.PUBLIC_URL + "/assets/img/icons/calendar.svg"}
             />
-            <span>Cart</span>
+            <span>Calendar</span>
           </div>
         </Link>
         <Link

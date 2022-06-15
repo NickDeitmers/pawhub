@@ -1,5 +1,0 @@
-{
-  "name": "error-message",
-  "private": true,
-  "main": "./ErrorMessage.js"
-}

@@ -14,7 +14,7 @@ const AllProducts = ({ products, wishlistItems, addToWishlist }) => {
         <div className="row">
           <div className="col-12">
             {/* section title */}
-            <h2 className="section-title space-mb--20">All Pawducts</h2>
+            <h2 className="section-title space-mb--20">All Services</h2>
             {/* featured products */}
             <div className="all-products-wrapper space-mb-m--20">
               <div className="row">

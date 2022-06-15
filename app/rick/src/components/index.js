@@ -8,6 +8,7 @@ import CategorySlider from "./CategorySlider";
 import BestSellerProduct from "./BestSellerProduct";
 import AllProducts from "./AllProducts";
 import ShopProducts from "./ShopProducts";
+import ShopServices from "./ShopServices";
 import SearchProducts from "./SearchProducts";
 import Rating from "./Rating";
 
@@ -22,6 +23,7 @@ export {
   BestSellerProduct,
   AllProducts,
   ShopProducts,
+  ShopServices,
   SearchProducts,
   Rating
 };

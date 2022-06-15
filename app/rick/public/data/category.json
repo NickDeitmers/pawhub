@@ -1,38 +1,38 @@
 [
   {
     "id": "1",
-    "name": "Food",
-    "image": "/assets/img/icons/category/food.svg",
-    "url": "/shop"
+    "name": "Groomers",
+    "image": "/assets/img/icons/category/scissors.svg",
+    "url": "/groomers"
   },
   {
     "id": "2",
-    "name": "Toys",
-    "image": "/assets/img/icons/category/toys.svg",
-    "url": "/shop"
+    "name": "Daycares",
+    "image": "/assets/img/icons/category/services.svg",
+    "url": "/daycares"
   },
   {
     "id": "3",
-    "name": "Services",
-    "image": "/assets/img/icons/category/services.svg",
-    "url": "/shop"
+    "name": "Events",
+    "image": "/assets/img/icons/category/balloon.svg",
+    "url": "/events"
   },
   {
     "id": "4",
     "name": "Vets",
     "image": "/assets/img/icons/category/vets.svg",
-    "url": "/shop"
+    "url": "/vets"
   },
   {
     "id": "5",
     "name": "Other",
     "image": "/assets/img/icons/category/other.svg",
-    "url": "/shop"
+    "url": "/other"
   },
   {
     "id": "6",
-    "name": "Bag",
-    "image": "/assets/img/icons/category/cat2.svg",
-    "url": "/shop"
+    "name": "eCommerce (soon)",
+    "image": "/assets/img/icons/category/hairdryer.svg",
+    "url": "/home"
   }
 ]

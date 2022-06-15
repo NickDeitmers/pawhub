@@ -1,5 +1,0 @@
-{
-  "name": "search-products",
-  "private": true,
-  "main": "./SearchProducts.js"
-}

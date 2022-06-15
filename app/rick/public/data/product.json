@@ -2,14 +2,18 @@
   {
     "id": "1",
     "sku": "asdf123",
-    "name": "Dog Cigar",
+    "name": "Vet C. de Velázquez",
+    "lat": 40.43635573038929,
+    "lng": -3.6829797079659983,
+    "address": "C. de Velázquez, 118, 28006 Madrid, Spain",
+    "icon": "../../data/icons/vets.svg",
     "price": 11.5,
     "discount": 10,
     "rating": 3,
-    "saleCount": 54,
+    "saleCount": 5,
     "wishlistCount": 10,
     "ratingCount": 5,
-    "category": ["men"],
+    "category": ["veterinary"],
     "variation": [
       {
         "color": "black",
@@ -44,14 +48,294 @@
   {
     "id": "2",
     "sku": "asdf124",
-    "name": "Vanity Bag",
+    "name": "Happy Petting Massage",
+    "lat": 40.44639248175921,  
+    "lng": -3.6866539139541965,
+    "address": "C. de Joaquín Costa, 27, 28002 Madrid, Spain",
+    "icon": "../../data/icons/balloon.svg",
     "price": 2.45,
     "discount": 15,
     "rating": 4,
     "saleCount": 74,
     "wishlistCount": 11,
     "ratingCount": 8,
-    "category": ["women"],
+    "category": ["other"],
+    "variation": [
+      {
+        "color": "black",
+        "image": "/assets/img/products/product2.png",
+        "stock": 20
+      },
+      {
+        "color": "violet",
+        "image": "/assets/img/products/product3.png",
+        "stock": 10
+      },
+      {
+        "color": "pink",
+        "image": "/assets/img/products/product4.png",
+        "stock": 5
+      },
+      {
+        "color": "brown",
+        "image": "/assets/img/products/product5.png",
+        "stock": 2
+      }
+    ],
+    "image": ["/assets/img/products/dog-massage-1.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product2.png",
+      "/assets/img/product-slider/product3.png",
+      "/assets/img/product-slider/product4.png"
+    ],
+    "shortDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant",
+    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+  },
+  {
+    "id": "3",
+    "sku": "asdf123",
+    "name": "Peticure",
+    "lat": 40.43562483405078, 
+    "lng": -3.6896040764903706,
+    "address": "P.º de la Castellana, 43, 28046 Madrid, Spain",
+    "icon": "../../data/icons/balloon.svg",
+    "price": 11.5,
+    "discount": 10,
+    "rating": 3,
+    "saleCount": 5,
+    "wishlistCount": 10,
+    "ratingCount": 5,
+    "category": ["groomer", "other"],
+    "variation": [
+      {
+        "color": "black",
+        "image": "/assets/img/products/product1.png",
+        "stock": 20
+      },
+      {
+        "color": "violet",
+        "image": "/assets/img/products/product2.png",
+        "stock": 10
+      },
+      {
+        "color": "pink",
+        "image": "/assets/img/products/product3.png",
+        "stock": 5
+      },
+      {
+        "color": "brown",
+        "image": "/assets/img/products/product4.png",
+        "stock": 2
+      }
+    ],
+    "image": ["/assets/img/products/product1.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product1.png",
+      "/assets/img/product-slider/product1.1.png",
+      "/assets/img/product-slider/product1.2.png"
+    ],
+    "shortDescription": "Make your dog look like a bad ass!",
+    "fullDescription": "Disclaimer: This is not a real cigar. No dogs will be harmed by the use of the product."
+  },
+  {
+    "id": "4",
+    "sku": "asdf124",
+    "name": "Perro Fiestas",
+    "lat": 40.427817798613184, 
+    "lng": -3.683605677843208,
+    "address": "C. de Velázquez, 54, 28001 Madrid, Spain",
+    "icon": "../../data/icons/balloon.svg",
+    "price": 2.45,
+    "discount": 15,
+    "rating": 4,
+    "saleCount": 74,
+    "wishlistCount": 11,
+    "ratingCount": 8,
+    "category": ["events"],
+    "variation": [
+      {
+        "color": "black",
+        "image": "/assets/img/products/product2.png",
+        "stock": 20
+      },
+      {
+        "color": "violet",
+        "image": "/assets/img/products/product3.png",
+        "stock": 10
+      },
+      {
+        "color": "pink",
+        "image": "/assets/img/products/product4.png",
+        "stock": 5
+      },
+      {
+        "color": "brown",
+        "image": "/assets/img/products/product5.png",
+        "stock": 2
+      }
+    ],
+    "image": ["/assets/img/products/dog-party-1.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product2.png",
+      "/assets/img/product-slider/product3.png",
+      "/assets/img/product-slider/product4.png"
+    ],
+    "shortDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant",
+    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+  },
+  {
+    "id": "5",
+    "sku": "asdf123",
+    "name": "Dog Acupuncture",
+    "lat": 40.441080551697944, 
+    "lng": -3.7007479412066764,
+    "address": "Pl. del Descubridor Diego de Ordás, 1, 28003 Madrid, Spain",
+    "icon": "../../data/icons/vets.svg",
+    "price": 11.5,
+    "discount": 10,
+    "rating": 3,
+    "saleCount": 5,
+    "wishlistCount": 10,
+    "ratingCount": 5,
+    "category": ["other", "veterinary"],
+    "variation": [
+      {
+        "color": "black",
+        "image": "/assets/img/products/product1.png",
+        "stock": 20
+      },
+      {
+        "color": "violet",
+        "image": "/assets/img/products/product2.png",
+        "stock": 10
+      },
+      {
+        "color": "pink",
+        "image": "/assets/img/products/product3.png",
+        "stock": 5
+      },
+      {
+        "color": "brown",
+        "image": "/assets/img/products/product4.png",
+        "stock": 2
+      }
+    ],
+    "image": ["/assets/img/products/product1.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product1.png",
+      "/assets/img/product-slider/product1.1.png",
+      "/assets/img/product-slider/product1.2.png"
+    ],
+    "shortDescription": "Make your dog look like a bad ass!",
+    "fullDescription": "Disclaimer: This is not a real cigar. No dogs will be harmed by the use of the product."
+  },
+  {
+    "id": "6",
+    "sku": "asdf124",
+    "name": "Veterinary Chamberi",
+    "lat": 40.45004658195688,  
+    "lng": -3.7013577452015283,
+    "address": "C. de Palencia, 29, 28020 Madrid, Spain",
+    "icon": "../../data/icons/balloon.svg",
+    "price": 2.45,
+    "discount": 15,
+    "rating": 4,
+    "saleCount": 74,
+    "wishlistCount": 11,
+    "ratingCount": 8,
+    "category": ["veterinary"],
+    "variation": [
+      {
+        "color": "black",
+        "image": "/assets/img/products/product2.png",
+        "stock": 20
+      },
+      {
+        "color": "violet",
+        "image": "/assets/img/products/product3.png",
+        "stock": 10
+      },
+      {
+        "color": "pink",
+        "image": "/assets/img/products/product4.png",
+        "stock": 5
+      },
+      {
+        "color": "brown",
+        "image": "/assets/img/products/product5.png",
+        "stock": 2
+      }
+    ],
+    "image": ["/assets/img/products/vet-chamberi-1.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product2.png",
+      "/assets/img/product-slider/product3.png",
+      "/assets/img/product-slider/product4.png"
+    ],
+    "shortDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant",
+    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+  },
+  {
+    "id": "7",
+    "sku": "asdf123",
+    "name": "Perro Peluquera",
+    "lat": 40.434176149881196, 
+    "lng": -3.6926192124922155,
+    "address": "C. de Rafael Calvo, 29, 28010 Madrid, Spain",
+    "icon": "../../data/icons/balloon.svg",
+    "price": 11.5,
+    "discount": 10,
+    "rating": 3,
+    "saleCount": 5,
+    "wishlistCount": 10,
+    "ratingCount": 5,
+    "category": ["groomer"],
+    "variation": [
+      {
+        "color": "black",
+        "image": "/assets/img/products/product1.png",
+        "stock": 20
+      },
+      {
+        "color": "violet",
+        "image": "/assets/img/products/product2.png",
+        "stock": 10
+      },
+      {
+        "color": "pink",
+        "image": "/assets/img/products/product3.png",
+        "stock": 5
+      },
+      {
+        "color": "brown",
+        "image": "/assets/img/products/product4.png",
+        "stock": 2
+      }
+    ],
+    "image": ["/assets/img/products/product1.png"],
+    "galleryImage": [
+      "/assets/img/product-slider/product1.png",
+      "/assets/img/product-slider/product1.1.png",
+      "/assets/img/product-slider/product1.2.png"
+    ],
+    "shortDescription": "Make your dog look like a bad ass!",
+    "fullDescription": "Disclaimer: This is not a real cigar. No dogs will be harmed by the use of the product."
+  },
+  {
+    "id": "8",
+    "sku": "asdf124",
+    "name": "Pet Daycare C. de Ferraz",
+    "lat": 40.43223591000139,  
+    "lng": -3.723301859641212,
+    "address": "C. de Ferraz, 77, 28008 Madrid, Spain",
+    "icon": "../../data/icons/balloon.svg",
+    "price": 2.45,
+    "discount": 15,
+    "rating": 4,
+    "saleCount": 74,
+    "wishlistCount": 11,
+    "ratingCount": 8,
+    "category": ["daycare"],
     "variation": [
       {
         "color": "black",
@@ -84,190 +368,93 @@
     "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
   },
   {
-    "id": "3",
-    "sku": "asdf125",
-    "name": "Sports Shoe",
-    "price": 22,
-    "discount": 20,
-    "rating": 5,
-    "saleCount": 7,
-    "wishlistCount": 31,
-    "ratingCount": 18,
-    "category": ["men", "women"],
+    "id": "9",
+    "sku": "asdf123",
+    "name": "Refugio de animales Madrid",
+    "lat": 40.43445887996859, 
+    "lng": -3.652752608072716,
+    "address": "C. de Florencio Llorente, 27, 28027 Madrid, Spain",
+    "icon": "../../data/icons/vets.svg",
+    "price": 11.5,
+    "discount": 10,
+    "rating": 3,
+    "saleCount": 5,
+    "wishlistCount": 10,
+    "ratingCount": 5,
+    "category": ["other"],
     "variation": [
       {
         "color": "black",
-        "image": "/assets/img/products/product3.png",
+        "image": "/assets/img/products/product1.png",
         "stock": 20
       },
       {
         "color": "violet",
-        "image": "/assets/img/products/product4.png",
+        "image": "/assets/img/products/product2.png",
         "stock": 10
       },
       {
         "color": "pink",
-        "image": "/assets/img/products/product5.png",
+        "image": "/assets/img/products/product3.png",
         "stock": 5
       },
       {
         "color": "brown",
-        "image": "/assets/img/products/product6.png",
+        "image": "/assets/img/products/product4.png",
         "stock": 2
       }
     ],
-    "image": ["/assets/img/products/product3.png"],
+    "image": ["/assets/img/products/product1.png"],
     "galleryImage": [
-      "/assets/img/product-slider/product3.png",
-      "/assets/img/product-slider/product4.png",
-      "/assets/img/product-slider/product5.png"
+      "/assets/img/product-slider/product1.png",
+      "/assets/img/product-slider/product1.1.png",
+      "/assets/img/product-slider/product1.2.png"
     ],
-    "shortDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-  },
-  {
-    "id": "4",
-    "sku": "asdf126",
-    "name": "Premium Shoe",
-    "price": 32.5,
-    "discount": 5,
-    "rating": 0,
-    "saleCount": 4,
-    "wishlistCount": 16,
-    "ratingCount": 6,
-    "category": ["men", "women"],
-    "stock": 10,
-    "image": ["/assets/img/products/product4.png"],
-    "galleryImage": [
-      "/assets/img/product-slider/product4.png",
-      "/assets/img/product-slider/product5.png",
-      "/assets/img/product-slider/product6.png"
-    ],
-    "shortDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-  },
-  {
-    "id": "5",
-    "sku": "asdf127",
-    "name": "Makeup Box",
-    "price": 12.5,
-    "discount": 15,
-    "rating": 4,
-    "saleCount": 5,
-    "wishlistCount": 12,
-    "ratingCount": 7,
-    "category": ["women"],
-    "stock": 11,
-    "image": ["/assets/img/products/product5.png"],
-    "galleryImage": [
-      "/assets/img/product-slider/product5.png",
-      "/assets/img/product-slider/product6.png",
-      "/assets/img/product-slider/product7.png"
-    ],
-    "shortDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-  },
-  {
-    "id": "6",
-    "sku": "asdf128",
-    "name": "Ear Ring",
-    "price": 2.5,
-    "discount": 15,
-    "rating": 5,
-    "saleCount": 50,
-    "wishlistCount": 22,
-    "ratingCount": 8,
-    "category": ["women"],
-    "stock": 14,
-    "image": ["/assets/img/products/product6.png"],
-    "galleryImage": [
-      "/assets/img/product-slider/product6.png",
-      "/assets/img/product-slider/product7.png",
-      "/assets/img/product-slider/product8.png"
-    ],
-    "shortDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-  },
-  {
-    "id": "7",
-    "sku": "asdf129",
-    "name": "Ear Ring Two",
-    "price": 2.5,
-    "discount": 15,
-    "rating": 5,
-    "saleCount": 50,
-    "wishlistCount": 22,
-    "ratingCount": 8,
-    "category": ["women"],
-    "stock": 14,
-    "image": ["/assets/img/products/product7.png"],
-    "galleryImage": [
-      "/assets/img/product-slider/product7.png",
-      "/assets/img/product-slider/product8.png",
-      "/assets/img/product-slider/product9.png"
-    ],
-    "shortDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-  },
-  {
-    "id": "8",
-    "sku": "asdf130",
-    "name": "Tour Cap",
-    "price": 12,
-    "discount": 15,
-    "rating": 3,
-    "saleCount": 30,
-    "wishlistCount": 2,
-    "ratingCount": 6,
-    "category": ["women"],
-    "stock": 4,
-    "image": ["/assets/img/products/product8.png"],
-    "galleryImage": [
-      "/assets/img/product-slider/product8.png",
-      "/assets/img/product-slider/product9.png",
-      "/assets/img/product-slider/product10.png"
-    ],
-    "shortDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
-  },
-  {
-    "id": "9",
-    "sku": "asdf131",
-    "name": "Belt",
-    "price": 14,
-    "discount": 5,
-    "rating": 5,
-    "saleCount": 20,
-    "wishlistCount": 12,
-    "ratingCount": 9,
-    "category": ["men"],
-    "stock": 12,
-    "image": ["/assets/img/products/product9.png"],
-    "galleryImage": [
-      "/assets/img/product-slider/product9.png",
-      "/assets/img/product-slider/product10.png",
-      "/assets/img/product-slider/product1.png"
-    ],
-    "shortDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant",
-    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    "shortDescription": "Make your dog look like a bad ass!",
+    "fullDescription": "Disclaimer: This is not a real cigar. No dogs will be harmed by the use of the product."
   },
   {
     "id": "10",
-    "sku": "asdf132",
-    "name": "Hair Clip",
-    "price": 3,
+    "sku": "asdf124",
+    "name": "Dogwatchers",
+    "lat": 40.42713217062408,   
+    "lng": -3.7016938851270713,
+    "address": "C. de San Mateo, 13, 28004 Madrid, Spain",
+    "icon": "../../data/icons/balloon.svg",
+    "price": 2.45,
     "discount": 15,
-    "rating": 2,
-    "saleCount": 20,
-    "wishlistCount": 15,
-    "ratingCount": 4,
-    "category": ["women"],
-    "stock": 14,
-    "image": ["/assets/img/products/product10.png"],
+    "rating": 4,
+    "saleCount": 74,
+    "wishlistCount": 11,
+    "ratingCount": 8,
+    "category": ["daycare"],
+    "variation": [
+      {
+        "color": "black",
+        "image": "/assets/img/products/product2.png",
+        "stock": 20
+      },
+      {
+        "color": "violet",
+        "image": "/assets/img/products/product3.png",
+        "stock": 10
+      },
+      {
+        "color": "pink",
+        "image": "/assets/img/products/product4.png",
+        "stock": 5
+      },
+      {
+        "color": "brown",
+        "image": "/assets/img/products/product5.png",
+        "stock": 2
+      }
+    ],
+    "image": ["/assets/img/products/product2.png"],
     "galleryImage": [
-      "/assets/img/product-slider/product10.png",
-      "/assets/img/product-slider/product1.png",
-      "/assets/img/product-slider/product2.png"
+      "/assets/img/product-slider/product2.png",
+      "/assets/img/product-slider/product3.png",
+      "/assets/img/product-slider/product4.png"
     ],
     "shortDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant",
     "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."

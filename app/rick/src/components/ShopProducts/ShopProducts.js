@@ -33,7 +33,7 @@ class ShopProducts extends Component {
     });
   }
 
-  render() {
+  render() { 
     const { products, wishlistItems, addToWishlist } = this.props;
     const { gridActivate, listActivate } = this.state;
     const { setGridActive, setListActive } = this;
