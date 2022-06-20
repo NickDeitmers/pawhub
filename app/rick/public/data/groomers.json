@@ -36,7 +36,7 @@
         "stock": 2
       }
     ],
-    "image": ["/assets/img/products/product1.png"],
+    "image": ["/assets/img/products/pets.png"],
     "galleryImage": [
       "/assets/img/product-slider/product1.png",
       "/assets/img/product-slider/product1.1.png",
@@ -82,7 +82,7 @@
         "stock": 2
       }
     ],
-    "image": ["/assets/img/products/product1.png"],
+    "image": ["/assets/img/products/groomer.png"],
     "galleryImage": [
       "/assets/img/product-slider/product1.png",
       "/assets/img/product-slider/product1.1.png",

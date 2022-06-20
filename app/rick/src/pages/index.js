@@ -10,6 +10,7 @@ import Product from "./Product";
 import Chat from "./Chat";
 import Cart from "./Cart";
 import Calendar from "./Calendar";
+import Confirmed from "./Confirmed";
 import Map from "./Map";
 import Wishlist from "./Wishlist";
 import Checkout from "./Checkout";
@@ -36,6 +37,7 @@ export {
   Chat,
   Cart,
   Calendar,
+  Confirmed,
   Map,
   Wishlist,
   Checkout,

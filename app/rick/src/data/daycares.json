@@ -10,7 +10,8 @@
       "icon": "../../data/icons/balloon.svg",
       "price": 2.45,
       "discount": 15,
-      "rating": 4,
+      "rating": 3,
+      "rating_stars": "/assets/img/ratings/three-stars.png",
       "saleCount": 74,
       "wishlistCount": 11,
       "ratingCount": 8,
@@ -37,7 +38,7 @@
           "stock": 2
         }
       ],
-      "image": ["/assets/img/products/product2.png"],
+      "image": ["/assets/img/products/daycare.png"],
       "galleryImage": [
         "/assets/img/product-slider/product2.png",
         "/assets/img/product-slider/product3.png",
@@ -57,6 +58,7 @@
       "price": 2.45,
       "discount": 15,
       "rating": 4,
+      "rating_stars": "/assets/img/ratings/four-stars.png",
       "saleCount": 74,
       "wishlistCount": 11,
       "ratingCount": 8,
@@ -83,7 +85,7 @@
           "stock": 2
         }
       ],
-      "image": ["/assets/img/products/product2.png"],
+      "image": ["/assets/img/products/dawg.png"],
       "galleryImage": [
         "/assets/img/product-slider/product2.png",
         "/assets/img/product-slider/product3.png",

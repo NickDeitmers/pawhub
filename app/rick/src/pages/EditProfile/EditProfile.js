@@ -49,13 +49,13 @@ const EditProfile = () => {
                     />
                   </div>
                   <div className="edit-profile-form__single-field space-mb--30">
-                    <label htmlFor="shippingAddress">Shipping Address</label>
+                    <label htmlFor="shippingAddress">Billing Address</label>
                     <textarea
                       name="shippingAddress"
                       id="shippingAddress"
                       cols={30}
                       rows={5}
-                      placeholder="Enter Shipping Address"
+                      placeholder="Enter Billing Address"
                       defaultValue={""}
                     />
                   </div>

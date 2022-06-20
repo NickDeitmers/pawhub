@@ -9,6 +9,7 @@ import BestSellerProduct from "./BestSellerProduct";
 import AllProducts from "./AllProducts";
 import ShopProducts from "./ShopProducts";
 import ShopServices from "./ShopServices";
+import ShopProviders from "./ShopProviders";
 import SearchProducts from "./SearchProducts";
 import Rating from "./Rating";
 
@@ -24,6 +25,7 @@ export {
   AllProducts,
   ShopProducts,
   ShopServices,
+  ShopProviders,
   SearchProducts,
   Rating
 };

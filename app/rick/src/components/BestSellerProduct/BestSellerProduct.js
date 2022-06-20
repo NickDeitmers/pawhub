@@ -15,7 +15,7 @@ const BestSellerProduct = ({ products, wishlistItems, addToWishlist }) => {
           <div className="col-12">
             {/* section title */}
             <h2 className="section-title space-mb--20">
-              Most Pawpular{" "}
+              Most Pawpular Providers{" "}
               <Link to={process.env.PUBLIC_URL + "/shop"}>
                 VIEW ALL{" "}
                 <span>
@@ -31,8 +31,8 @@ const BestSellerProduct = ({ products, wishlistItems, addToWishlist }) => {
             {/* featured products */}
             <div className="featured-product-wrapper space-mb-m--15">
               <div className="row row-5">
-                {products &&
-                  products.map((single) => {
+                {products[0].slice(1, 3) &&
+                  products[0].slice(1, 3).map((single) => {
                     const wishlistItem = wishlistItems.filter(
                       (wishlistItem) => wishlistItem.id === single.id
                     )[0];
@@ -42,7 +42,7 @@ const BestSellerProduct = ({ products, wishlistItems, addToWishlist }) => {
                           <div className="featured-product__image">
                             <Link
                               to={
-                                process.env.PUBLIC_URL + `/product/${single.id}`
+                                process.env.PUBLIC_URL + `/services/${single.id}`
                               }
                             >
                               <img
@@ -52,31 +52,28 @@ const BestSellerProduct = ({ products, wishlistItems, addToWishlist }) => {
                               />
                             </Link>
                           </div>
-                          <div className="featured-product__content">
-                            <div className="price">
-                              {single.discount && single.discount > 0 ? (
-                                <Fragment>
-                                  <span className="main-price mr-1">{`$${single.price}`}</span>
-                                  <span className="discounted-price">{`$${getDiscountPrice(
-                                    single.price,
-                                    single.discount
-                                  )}`}</span>
-                                </Fragment>
-                              ) : (
-                                <span className="discounted-price">{`$${single.price}`}</span>
-                              )}
-                            </div>
-                            <div className="icon">
-                              <button
-                                className={
-                                  wishlistItem !== undefined ? "active" : ""
-                                }
-                                disabled={wishlistItem !== undefined}
-                                onClick={() => addToWishlist(single)}
+                          <div className="grid-product__content">
+                            <h3 className="title">
+                              <Link
+                                to={process.env.PUBLIC_URL + `/services/${single.id}`}
                               >
-                                <ReactSVG src="assets/img/icons/heart.svg" />
-                              </button>
+                                {single.name}
+                              </Link>
+                            </h3>
+                            <div className="rating">
+                              <img
+                                  src={process.env.PUBLIC_URL + single.rating_stars}
+                                  className="img-fluid"
+                                  alt=""
+                              />
                             </div>
+                            <span className="category">
+                              {single.category.map((item, index, arr) => {
+                                return (
+                                  item + (index !== arr.length - 1 ? ", " : "")
+                                );
+                              })}
+                            </span>
                           </div>
                         </div>
                       </div>

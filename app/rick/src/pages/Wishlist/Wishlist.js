@@ -9,6 +9,8 @@ import { getDiscountPrice } from "../../helpers/product";
 import { deleteFromWishlistDispatch } from "../../redux/actions/wishlistActions";
 import { addToCartDispatch } from "../../redux/actions/cartActions";
 
+import * as ppspInfo from "../../data/services.json";
+
 const Wishlist = ({ wishlistItems, deleteFromWishlist, addToCart }) => {
   return (
     <div className="body-wrapper space-pt--70 space-pb--120">
@@ -31,22 +33,12 @@ const Wishlist = ({ wishlistItems, deleteFromWishlist, addToCart }) => {
                 <div className="cart-product__content">
                   <h3 className="title">{single.name}</h3>
                   <span className="category">
-                    {single.category.map((item, index, arr) => {
-                      return item + (index !== arr.length - 1 ? ", " : "");
-                    })}
+                    {`At: ${ppspInfo.pet_services[single.id[0]-1].name}`}
                   </span>
                   <div className="price">
-                    {single.discount && single.discount > 0 ? (
                       <Fragment>
-                        <span className="main-price mr-1">{`$${single.price}`}</span>
-                        <span className="discounted-price">{`$${getDiscountPrice(
-                          single.price,
-                          single.discount
-                        )}`}</span>
+                        <span className="discounted-price">{`€${single.price}`}</span>
                       </Fragment>
-                    ) : (
-                      <span className="discounted-price">{`$${single.price}`}</span>
-                    )}
                   </div>
                 </div>
                 <div className="cart-product__status">

@@ -69,8 +69,8 @@ class ShopProducts extends Component {
         >
           <div className="container">
             <div className="row">
-              {products &&
-                products.map(single => {
+              {products[0] &&
+                products[0].map(single => {
                   const wishlistItem = wishlistItems.filter(
                     wishlistItem => wishlistItem.id === single.id
                   )[0];
@@ -109,6 +109,13 @@ class ShopProducts extends Component {
                               {single.name}
                             </Link>
                           </h3>
+                          <div className="rating">
+                              <img
+                                  src={process.env.PUBLIC_URL + single.rating_stars}
+                                  className="img-fluid"
+                                  alt=""
+                              />
+                          </div>
                           <span className="category">
                             {single.category.map((item, index, arr) => {
                               return (
@@ -116,19 +123,6 @@ class ShopProducts extends Component {
                               );
                             })}
                           </span>
-                          <div className="price">
-                            {single.discount && single.discount > 0 ? (
-                              <Fragment>
-                                <span className="main-price mr-1">{`$${single.price}`}</span>
-                                <span className="discounted-price">{`$${getDiscountPrice(
-                                  single.price,
-                                  single.discount
-                                )}`}</span>
-                              </Fragment>
-                            ) : (
-                              <span className="discounted-price">{`$${single.price}`}</span>
-                            )}
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -144,8 +138,8 @@ class ShopProducts extends Component {
             listActivate ? "d-block" : "d-none"
           }`}
         >
-          {products &&
-            products.map(single => {
+          {products[0] &&
+            products[0].map(single => {
               const wishlistItem = wishlistItems.filter(
                 wishlistItem => wishlistItem.id === single.id
               )[0];

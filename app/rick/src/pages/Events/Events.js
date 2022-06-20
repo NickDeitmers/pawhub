@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaAngleLeft } from "react-icons/fa";
 import { connect } from "react-redux";
-import { ShopProducts } from "../../components";
+import { ShopProviders } from "../../components";
 import {
   toggleShopTopFilter,
   getIndividualCategories,
@@ -110,7 +110,7 @@ class Shop extends Component {
     const { products } = this.props;
     const { getSortParams } = this;
     const { finalSortedProducts, sortType, sortValue } = this.state;
-    const uniqueCategories = getIndividualCategories(products);
+    const uniqueCategories = getIndividualCategories([0]);
     const uniqueColors = getIndividualColors(products);
 
     return (
@@ -200,7 +200,7 @@ class Shop extends Component {
         <Map />
         </div>
         {/* shop products */}
-        <ShopProducts products={finalSortedProducts} />
+        <ShopProviders products={finalSortedProducts} />
       </div>
     );
   }

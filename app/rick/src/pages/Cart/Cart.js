@@ -9,7 +9,8 @@ import {
   cartItemStock
 } from "../../redux/actions/cartActions";
 import { getDiscountPrice } from "../../helpers/product";
-import { Breadcrumb } from "../../components";
+import { Breadcrumb } from "../../components"; 
+import * as ppspInfo from "../../data/services.json"
 
 class Cart extends Component {
   constructor(props) {
@@ -61,30 +62,13 @@ class Cart extends Component {
                         </Link>
                       </h3>
                       <span className="category">
-                        {cartItem.category.map((item, index, arr) => {
-                          return item + (index !== arr.length - 1 ? ", " : "");
-                        })}
+                        {`At: ${ppspInfo.pet_services[cartItem.id[0]-1].name}`}
                       </span>
                       <div className="price">
-                        {cartItem.discount && cartItem.discount > 0 ? (
                           <Fragment>
-                            <span className="main-price mr-1">{`$${cartItem.price}`}</span>
-                            <span className="discounted-price">{`$${getDiscountPrice(
-                              cartItem.price,
-                              cartItem.discount
-                            )}`}</span>
+                            <span className="discounted-price">{`€${cartItem.price}`}</span>
                           </Fragment>
-                        ) : (
-                          <span className="discounted-price">{`$${cartItem.price}`}</span>
-                        )}
-                      </div>
-                      {cartItem.selectedProductColor ? (
-                        <div className="cart-item-variation">
-                          <span>Color: {cartItem.selectedProductColor}</span>
-                        </div>
-                      ) : (
-                        ""
-                      )}
+                      </div>    
                     </div>
                     <div className="cart-product__counter">
                       <div className="cart-plus-minus">

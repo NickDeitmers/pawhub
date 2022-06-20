@@ -14,7 +14,7 @@ import {
 //From tutorial
 import { useMemo } from "react";
 import { GoogleMap, useLoadScript, Marker, InfoWindow } from "@react-google-maps/api"
-import * as ppspInfo from "../../data/groomers.json";
+import * as ppspInfo from "../../data/services.json";
 
 const mapStyles = {
   width: '60%',
@@ -35,19 +35,17 @@ function ShowMap() {
       mapContainerClassName="map-container"
       mapContainerStyle={mapStyles}
     >
-      {ppspInfo.pet_services.map(ppsp => (
           <Marker 
-            key={ppsp.id} 
+            key={ppspInfo.pet_services[window.location.href.slice(-1) - 1].id} 
             position={{
-              lat: ppsp.lat, 
-              lng: ppsp.lng
+              lat: ppspInfo.pet_services[window.location.href.slice(-1) - 1].lat, 
+              lng: ppspInfo.pet_services[window.location.href.slice(-1) - 1].lng
             }}
             onClick={() => {
-              setSelectedService(ppsp);
+              setSelectedService(ppspInfo.pet_services[window.location.href.slice(-1) - 1]);
             }}
           />
       )
-      )}
       
       {selectedService && (
         <InfoWindow
@@ -87,7 +85,7 @@ class Shop extends Component {
     this.state = {
       sortType: "",
       sortValue: "",
-      finalSortedProducts: ppspInfo.pet_services
+      finalSortedProducts: ppspInfo.pet_services[window.location.href.slice(-1) - 1].available_services
     };
   }
 
@@ -98,7 +96,7 @@ class Shop extends Component {
     });
 
     let sortedProducts = getSortedProducts(
-      ppspInfo.pet_services && ppspInfo.pet_services,
+      ppspInfo.pet_services[window.location.href.slice(-1) - 1].available_services && ppspInfo.pet_services[window.location.href.slice(-1) - 1].available_services,
       sortType,
       sortValue
     );
@@ -134,7 +132,7 @@ class Shop extends Component {
                     ? sortValue === ""
                       ? "All Categories"
                       : "sortValue"
-                    : "Groomers"}
+                    : ppspInfo.pet_services[window.location.href.slice(-1) - 1].name}
                 </h4>
               </div>
               <div className="col-3 text-right">

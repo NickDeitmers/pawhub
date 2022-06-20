@@ -4,12 +4,16 @@ import Swiper from "react-id-swiper";
 import { ReactSVG } from "react-svg";
 import { Rating } from "../../components";
 
+
 import {
   getDiscountPrice,
   getProductCartQuantity
 } from "../../helpers/product";
 import { addToCartDispatch } from "../../redux/actions/cartActions";
 import { addToWishlistDispatch } from "../../redux/actions/wishlistActions";
+import * as ppspInfo from "../../data/services.json"
+
+
 
 class Product extends Component {
   constructor(props) {
@@ -56,13 +60,13 @@ class Product extends Component {
         {/*====================  product image slider ====================*/}
         <div className="product-image-slider-wrapper space-pb--30 space-mb--30">
           <Swiper {...params}>
-            {product.galleryImage &&
-              product.galleryImage.map((single, key) => {
+            {ppspInfo.pet_services[product.id[0]-1].image &&
+              ppspInfo.pet_services[product.id[0]-1].image.map((single, key) => {
                 return (
                   <div key={key}>
                     <div className="product-image-single swiper-slide">
                       <img
-                        src={process.env.PUBLIC_URL + single}
+                        src={ppspInfo.pet_services[product.id[0]-1].image}
                         className="img-fluid"
                         alt=""
                         height="350"
@@ -86,17 +90,9 @@ class Product extends Component {
                   <div className="product-content-header__main-info">
                     <h3 className="title">{product.name}</h3>
                     <div className="price">
-                      {product.discount && product.discount > 0 ? (
-                        <Fragment>
-                          <span className="main-price mr-1">{`$${product.price}`}</span>
-                          <span className="discounted-price">{`$${getDiscountPrice(
-                            product.price,
-                            product.discount
-                          )}`}</span>
-                        </Fragment>
-                      ) : (
-                        <span className="discounted-price">{`$${product.price}`}</span>
-                      )}
+                      <Fragment>
+                        <span className="discounted-price">{`€${product.price}`}</span>
+                      </Fragment>
                     </div>
                     <div className="rating">
                       {product.rating > 1 ? (
@@ -133,10 +129,9 @@ class Product extends Component {
             <div className="row">
               <div className="col-12">
                 <p className="space-mb--25">{product.shortDescription}</p>
-                <h4 className="space-mb--5">Free Shipping</h4>
+                <h4 className="space-mb--5">Address</h4>
                 <p>
-                  To Bangladesh from seller via china. Shipping <br /> method
-                  online.
+                  {ppspInfo.pet_services[product.id[0]-1].address}
                 </p>
               </div>
             </div>
@@ -149,62 +144,62 @@ class Product extends Component {
               <div className="col-12">
                 <h4>
                   <ReactSVG
-                    src={
-                      process.env.PUBLIC_URL + "/assets/img/icons/security.svg"
-                    }
-                  />{" "}
+                      src={
+                        process.env.PUBLIC_URL + "/assets/img/icons/security.svg"
+                      }
+                  />
+                  {" "}
                   Secure Payment Method.
                 </h4>
               </div>
             </div>
           </div>
         </div>
-        {product.variation ? (
-          <div className="product-color-picker border-bottom--thick space-pt--25 space-pb--25">
-            <div className="container">
-              <div className="row">
-                <div className="col-12">
-                  <h3 className="space-mb--20">Color Select</h3>
-                  <form>
-                    <ul className="color-picker">
-                      {product.variation.map((el, key) => {
-                        return (
-                          <li key={key}>
-                            <input
-                              id={el.color}
-                              type="radio"
-                              name="color"
-                              defaultValue={el.color}
-                              defaultChecked={key === 0 ? true : false}
-                              onChange={() => {
-                                this.setState({
-                                  selectedProductColor: el.color,
-                                  productStock: el.stock,
-                                  quantityCount
-                                });
-                              }}
-                            />
-                            <label className={el.color} htmlFor={el.color} />
-                          </li>
-                        );
-                      })}
-                    </ul>
+
+        
+        {/* Date Selector */}
+        <div className="product-content-description border-bottom--thick space-pt--25 space-pb--25">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div>
+                  <form action="/date">
+                    <label>
+                      <h4 className="space-mb--5">Select your preferred date</h4>
+                      <input type="date" name="bday">
+                      </input>
+                    </label>
                   </form>
                 </div>
               </div>
             </div>
           </div>
-        ) : (
-          ""
-        )}
+        </div>
 
-        {/* product content description */}
+
+
+
+
+          
+
+        {/* Time Slot Buttons */}
         <div className="product-content-description space-pt--25 space-pb--25">
-          <div className="container">
+        <div className="container">
             <div className="row">
               <div className="col-12">
-                <h4 className="space-mb--5">Specification</h4>
-                <p>{product.fullDescription}</p>
+                <h4 className="space-mb--5">Select your preferred slot</h4>
+                  <div className="days">
+                    <div className="day">
+                      <div className="timeslot">9:00am</div>
+                      <div className="timeslot">9:30am</div>
+                      <div className="timeslot">10:00am</div>
+                    </div>
+                    <div className="day">
+                      <div className="timeslot">10:30am</div>
+                      <div className="timeslot">11:00am</div>
+                      <div className="timeslot">11:30am</div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -218,8 +213,8 @@ class Product extends Component {
           >
             {" "}
             {wishlistItem !== undefined
-              ? "ADDED TO WISHLIST"
-              : "ADD TO WISHLIST"}
+              ? "ADDED TO FAVOURITES"
+              : "ADD TO FAVOURITES"}
           </button>
           {productStock && productStock > 0 ? (
             <button
@@ -229,7 +224,7 @@ class Product extends Component {
               }
               disabled={productCartQty >= productStock}
             >
-              {productCartQty >= productStock ? "STOCK END" : "ADD TO CART"}
+              {productCartQty >= productStock ? "NO AVAILABILITY" : "ADD APPOINTMENT TO CART"}
             </button>
           ) : (
             <button className="cart" disabled>

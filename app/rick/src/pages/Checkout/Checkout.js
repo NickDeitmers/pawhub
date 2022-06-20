@@ -14,7 +14,7 @@ const Checkout = ({ cartItems }) => {
         cartItems && cartItems.length >= 1 ? "bg-color--gradient" : ""
       } space-pt--70 space-pb--120`}
     >
-      <Breadcrumb pageTitle="Checkout" prevUrl="/home" />
+      <Breadcrumb pageTitle="Checkout" prevUrl="/cart" />
 
       {cartItems && cartItems.length >= 1 ? (
         <div className="checkout-body space-mt--30">
@@ -30,7 +30,7 @@ const Checkout = ({ cartItems }) => {
                         type="text"
                         name="fullName"
                         id="fullName"
-                        placeholder="Enter Full Name"
+                        placeholder="Manuel Lopez"
                       />
                     </div>
                     <div className="checkout-form__single-field space-mb--30">
@@ -39,7 +39,7 @@ const Checkout = ({ cartItems }) => {
                         type="text"
                         name="userName"
                         id="userName"
-                        placeholder="Enter User Name"
+                        placeholder="PetFanatic123"
                       />
                     </div>
                     <div className="checkout-form__single-field space-mb--30">
@@ -57,22 +57,22 @@ const Checkout = ({ cartItems }) => {
                         type="text"
                         name="emailAddress"
                         id="emailAddress"
-                        placeholder="Enter Email Address"
+                        placeholder="manuel_lopez@ie.com"
                       />
                     </div>
                     <div className="checkout-form__single-field space-mb--30">
-                      <label htmlFor="shippingAddress">Shipping Address</label>
+                      <label htmlFor="shippingAddress">Billing Address</label>
                       <textarea
                         name="shippingAddress"
                         id="shippingAddress"
                         cols={30}
                         rows={5}
-                        placeholder="Enter Shipping Address"
+                        placeholder="Maria de Molina 31Bis, Madrid"
                         defaultValue={""}
                       />
                     </div>
                     <div className="checkout-form__single-field space-mb--30">
-                      <label htmlFor="orderNotes">Order Notes</label>
+                      <label htmlFor="orderNotes">Order Comments</label>
                       <textarea
                         name="orderNotes"
                         id="orderNotes"
@@ -83,12 +83,12 @@ const Checkout = ({ cartItems }) => {
                       />
                     </div>
                     <div className="your-order-area space-mb--30">
-                      <h3>Your order</h3>
+                      <h3>Your booking</h3>
                       <div className="your-order-wrap gray-bg-4">
                         <div className="your-order-product-info">
                           <div className="your-order-top">
                             <ul>
-                              <li>Product</li>
+                              <li>Service</li>
                               <li>Total</li>
                             </ul>
                           </div>
@@ -112,11 +112,11 @@ const Checkout = ({ cartItems }) => {
                                     </span>{" "}
                                     <span className="order-price">
                                       {discountedPrice !== null
-                                        ? "$" +
+                                        ? "€" +
                                           (
                                             discountedPrice * cartItem.quantity
                                           ).toFixed(2)
-                                        : "$" +
+                                        : "€" +
                                           (
                                             cartItem.price * cartItem.quantity
                                           ).toFixed(2)}
@@ -124,12 +124,6 @@ const Checkout = ({ cartItems }) => {
                                   </li>
                                 );
                               })}
-                            </ul>
-                          </div>
-                          <div className="your-order-bottom">
-                            <ul>
-                              <li className="your-order-shipping">Shipping</li>
-                              <li>Free shipping</li>
                             </ul>
                           </div>
                           <div className="your-order-total">
@@ -142,7 +136,7 @@ const Checkout = ({ cartItems }) => {
                       </div>
                     </div>
                     <button className="checkout-form__button">
-                      Place Order
+                    <Link to={process.env.PUBLIC_URL + "/confirmed"}>Place Booking</Link>
                     </button>
                   </form>
                 </div>
