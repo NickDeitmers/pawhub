@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </Link>
         <Link
-          to={process.env.PUBLIC_URL + "/calendar"}
+          to={process.env.PUBLIC_URL + "/calendarview"}
           className="footer-nav-single"
         >
           <div className="menu-wrapper">
