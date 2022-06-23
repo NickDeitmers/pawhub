@@ -9,7 +9,7 @@ import Other from "./Other";
 import Product from "./Product";
 import Chat from "./Chat";
 import Cart from "./Cart";
-import Calendar from "./Calendar";
+import Calendarview from "./Calendarview";
 import Confirmed from "./Confirmed";
 import Map from "./Map";
 import Wishlist from "./Wishlist";
@@ -36,7 +36,7 @@ export {
   Product,
   Chat,
   Cart,
-  Calendar,
+  Calendarview,
   Confirmed,
   Map,
   Wishlist,

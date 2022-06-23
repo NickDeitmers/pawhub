@@ -14,6 +14,11 @@ import { addToWishlistDispatch } from "../../redux/actions/wishlistActions";
 import * as ppspInfo from "../../data/services.json"
 
 
+// Firestore
+import firebase from "firebase/compat/app";   
+import "firebase/compat/firestore";
+
+
 
 class Product extends Component {
   constructor(props) {

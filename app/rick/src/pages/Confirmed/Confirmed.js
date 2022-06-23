@@ -33,7 +33,7 @@ class Confirmed extends Component {
                 <br></br>
                 <br></br>
                 <p>
-                  Your appointment has been added to your <Link to={process.env.PUBLIC_URL + "/calendar"} style={{color: '#0000ff'}}>calendar</Link>.
+                  Your appointment has been added to your <Link to={process.env.PUBLIC_URL + "/calendarview"} style={{color: '#0000ff'}}>calendar</Link>.
                 </p>
               </center>
             </div>

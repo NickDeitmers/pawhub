@@ -22,7 +22,7 @@ const Product = lazy(() => import("./pages/Product"));
 const Services = lazy(() => import("./pages/Services"));
 const Chat = lazy(() => import("./pages/Chat"));
 const Cart = lazy(() => import("./pages/Cart"));
-const Calendar = lazy(() => import("./pages/Calendar"));
+const Calendarview = lazy(() => import("./pages/Calendarview"));
 const Confirmed = lazy(() => import("./pages/Confirmed"));
 const Map = lazy(() => import("./pages/Map"));
 const Wishlist = lazy(() => import("./pages/Wishlist"));
@@ -120,8 +120,8 @@ function App() {
               layout={DefaultLayout}
             />
             <AppRoute
-              path={process.env.PUBLIC_URL + "/calendar"}
-              component={Calendar}
+              path={process.env.PUBLIC_URL + "/calendarview"}
+              component={Calendarview}
               layout={DefaultLayout}
             />
             <AppRoute
